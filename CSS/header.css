@@ -52,7 +52,7 @@ margin: 0;
     bottom: 0;
     width: 100%;
     z-index: -1;
-        background: url("/images/bg/headerbg.jpg");
+        background: url("images/bg/headerbg.jpg");
         background-size: cover;
         background-color: #40826D;
         background-blend-mode:darken;
