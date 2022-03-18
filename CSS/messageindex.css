@@ -1,0 +1,107 @@
+.messages{
+    flex-wrap: wrap;
+}
+.message{
+    position: relative;
+    background-color: olivedrab;
+    font-family: var(--raleway);
+    width: 100%;
+    max-width: 500px;
+    margin: 30px;
+    gap: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* padding: 10px ; */
+    height: 200px;
+}
+.inmessage{
+    color: rgb(255, 255, 255);
+    line-height: 1.5em;
+    position: relative;
+    max-width: 500px;
+
+}
+.inmessage a{
+    background-color: aliceblue;
+    padding: 10px;
+    color: var(--viridian);
+    border-radius: 30px;
+}
+.inmessage a:hover{
+    background-color: antiquewhite;
+    color: green;
+}
+.message img{
+    /* border-radius: 100px; */
+    height: 110%;
+    z-index: 1;
+    max-width:200px ;
+    transition: 1s;
+}
+/* .message img:hover{ */
+    /* height: 100%; */
+/* } */
+
+.message::before{
+    content: "";
+    height: 100%;
+    width: 100% ;
+    background-color: var(--viridian);
+    position: absolute;
+    /* top: 20px; */
+    bottom: 0;
+    left: 10px;
+    /* transform: rotate(90deg); */
+    transform: translatey(100%);
+    transition: 1s;
+    transform-origin: right;
+}
+.message:hover::before{
+    transform: translateX(0px);
+    /* transform-origin: left; */
+}
+
+
+
+
+
+/* responsive */
+
+
+@media(max-width:800px){
+    .message img{
+        width: 35%;
+        height: 100%;
+    }
+    .message {
+        height: 150px;
+        margin: 15px 5px;
+    }
+    .message h2{
+        margin: 5px 0;
+        padding: 0;
+        font-size: 18px;
+    }
+    .message p{
+        padding: 0;
+
+        margin: 5px 0;
+
+        font-size: 14px;
+    }
+    .inmessage{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        height: 100%;
+        line-height: 1em ;
+    }
+    .inmessage a{
+        position: absolute;
+        bottom: 5px;
+        padding: 5px;
+    }
+}

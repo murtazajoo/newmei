@@ -1,0 +1,106 @@
+.noticeboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vw  auto;
+    width: 60%;
+    height: 70vh;
+    color: rgb(175, 175, 175);
+
+}
+.board{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    height: 60vh;
+    width: 80%;
+    margin: 2vw 0;
+    position: relative;
+    /* overflow: hidden; */
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-image: url("/images/bg/empty-blackboard.jpg");
+    background-position: center;
+    border: 5px solid burlywood;
+    background-color: var(--viridian);
+    border-radius: 30px;
+
+}
+
+
+.mySlides {
+    padding: 30px;
+    display: none;
+    height: 85%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.flashname{
+font-size: 2.5vw;
+font-family: var(--patrick);
+font-weight: 700;
+color: wheat;
+}
+.flashdis{
+    font-size: 18px;
+    color: white;
+    font-family: var(--raleway);
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 100%;
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: var(--viridian);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+/* responsive{} */
+
+
+@media(max-width:1000px){
+  .noticeboard{
+    width: 100%;
+  }
+}

@@ -1,0 +1,62 @@
+
+#aboutus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    gap: 3vw;
+    margin: 3vw auto;
+}
+#aboutus img{
+    width: 40%;
+}
+
+.aboutustxt h1{
+color: rgba(51, 51, 51, 0.63);
+/* margin: 2vw 0; */
+}
+
+.aboutustxt{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.aboutustxt p{
+    padding:  0 10%  0 0;
+    line-height: 1.5em;
+    font-size: 14px;
+    color: var(--viridian);
+    font-family: var(--raleway);
+}
+
+#hows{
+    font-family: var(--patrick);
+    color: rgba(45, 45, 121, 0.863);
+    font-size: 2vw;
+}
+
+
+
+/* aboutus  responsive{ */
+
+    @media(max-width:650px) {
+
+        #aboutus{
+            flex-direction:column;
+            width: 95%;
+        }
+
+#aboutus img{
+    width: 100%;
+}
+.aboutustxt{
+    width: 90%;
+}
+.aboutustxt p{
+    padding: 0;
+}
+
+#hows{
+    font-size: 30px;
+}
+    }

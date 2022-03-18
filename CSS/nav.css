@@ -1,0 +1,124 @@
+#logoimg{
+    width: 150px;
+    height: 30px;
+    background-color: black;
+}
+
+
+nav{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    padding-top: 15px;
+    margin: 0 auto;
+    display: flex;
+
+
+}
+.navcon{
+    transition: 1s;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: rgb(218, 237, 255);
+    border-radius: 30px;
+    width: 60%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+nav .navcon > ul{
+    list-style: none;
+    justify-content: space-between;
+    width: 50%;
+    display: flex;
+    
+}
+
+nav .navcon > ul > li > a{
+    color: #40826D;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 1s;
+    font-size: larger;
+    z-index: 1;
+}
+nav .navcon > ul > li > a::after {
+    z-index: -1;
+    transition: 1s;
+    transform: rotateY(90deg);
+    transform-origin: left;
+    content: "";
+    position: absolute;
+    bottom:-10px ;
+    left: -5px;
+    right: -5px;
+    height: 3px;
+    background-color: olive;
+    box-shadow: 0px -5px 1px   olivedrab;
+    -webkit-box-shadow: 0px -5px 1px   olivedrab;
+
+}
+nav .navcon > ul > li > a:hover{
+    color: green;
+}
+nav .navcon > ul > li:hover  a::after {
+    transform: rotateY(0deg);
+}
+
+#navcontact{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 10px;
+    border-radius: 100px;
+    padding: 3px;
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    transition: 500ms;
+    cursor:pointer;
+}
+
+#navcontact:hover{
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0px 3px 20px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 3px 20px;
+}
+
+
+#enroll{
+    background-color: #40826D;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    transition: 0.8s;
+    letter-spacing: 1px;
+    font-size: larger;
+
+}
+#enroll:hover{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+    /* background-color: aliceblue; */
+    /* color: #40826D; */
+}
+
+@media(max-width:1300px){
+    .navcon{
+        width: 95% !important;
+    }
+}
+
+@media(max-width:850px){
+    .navcon ul{
+       display: none !important;
+    }
+}
+
+
+
+@media(max-width:400px){
+    #logoimg{
+        width: 100px;
+    }
+}

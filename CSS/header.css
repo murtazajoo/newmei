@@ -1,0 +1,114 @@
+header{
+    
+    position: relative;
+    height: 100vh;
+    /* opacity: 0.5; */
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+
+#headersec{
+    padding-top: 50px;
+
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#headersec h3{
+    letter-spacing: 2px;
+    line-height: 1em;
+font-size: 7vw;
+margin: 0;
+}
+#headersec h4{
+font-size: 3vw;
+margin: 0;
+}
+
+#headersec p{
+    font-size: 2vw;
+    margin: 0;
+    }
+#headersec img{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: 20px solid white;
+    transform: rotate(-10deg);
+    width: 40%;
+    /* transition: 1s; */
+}
+
+#paralx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+        background: url("/images/bg/headerbg.jpg");
+        background-size: cover;
+        background-color: #40826D;
+        background-blend-mode:darken;
+}
+
+.scroll{
+    margin: 0 auto;
+    background-color: aliceblue;
+    color: #066641;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 10px;
+    left: 47%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px 13px;
+    transition: 2s;
+    animation: scroll 2s infinite linear;
+}
+
+@keyframes scroll{
+    0%{
+bottom: 20px;
+    }
+    50%{
+bottom: 0;
+    }
+    100%{
+        bottom: 20px;
+    }
+}
+
+
+
+
+/* responsive header */
+
+@media(max-width:600px){
+
+
+
+header{
+    height: 100%;
+}
+
+#headersec{
+    flex-direction: column;
+}
+#headersec h3{
+font-size: 40px;
+}
+
+#headersec h4,#headersec p{
+    font-size: 20px;
+}
+#headersec img{
+    width: 70%;
+}
+}

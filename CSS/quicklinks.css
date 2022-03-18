@@ -1,0 +1,85 @@
+#qscroll{
+    position: fixed;
+    left:-35px;
+    top: 45%;
+    background-color: var(--viridian);
+    padding: 10px;
+    border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+transition: 1s;
+border: 1px solid white;
+z-index: 99;
+transform: translateX(-100%);
+}
+#qscroll a{
+    font-size: 18px;
+    padding: 0;
+    color: whitesmoke;
+}
+
+
+#quicklinks{
+    width: 90%;
+    margin: 0 auto;
+}
+.qlinkstitle h1{
+    margin: 3vw 0 0 0;
+    color: var(--viridian);
+    font-family: var(--raleway);
+
+}
+
+.allqlinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+.qlink{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 2vw 1vw;
+    margin: 2vw 1vw;
+    gap: 1vw;
+}
+.inqlink{
+    line-height: 2em;
+    font-family: var(--raleway);
+}
+.inqlink a{
+    text-decoration: underline;
+    color: green;
+    transition: 500ms;
+}
+.inqlink a:hover{
+    color: blue;
+}
+
+.qlink img{
+    width: 40%;
+}
+
+
+
+/* resopnsive */
+
+
+@media(max-width:600px){
+    .inqlink h1{
+        font-size: 18px;
+    }
+}

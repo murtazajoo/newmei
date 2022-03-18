@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+html,
+body{
+    scroll-behavior: smooth;
+    /* height: 300vh; */
+    margin: 0%;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url("/images/bg/headerbg.jpg"); */
+}
+:root{
+    --viridian : #40826D;
+    --raleway : 'Raleway', sans-serif ;
+    --patrick : 'Patrick Hand', cursive;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.fcen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: aquamarine;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+    border-radius: 30px;
+
+}
+body::-webkit-scrollbar-track{
+    background-color: green;
+}
+
+
+/* main{
+    background-color: red;
+    height: 100vh;
+} */
+h1{
+    margin: 0;
+}
+
+#admission{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+#admission img{
+    width: 40%;
+    /* height: 30%; */
+}
+
+#applyadd{
+    padding: 10%;
+}
+
+#applyadd h1{
+color: #40826D;
+font-family: var(--patrick);
+font-size: 4vw;
+margin: 0;
+}
+#applyadd p{
+    line-height: 1.5em;
+font-family: var(--raleway);
+font-size: 16px;
+}
+#applyadd a{
+    background-color: #40826D;
+    border: none;
+    padding: 10px;
+    color: wheat;
+transition: 700ms;
+}
+#applyadd a:hover{
+background-color: #00291c;
+color: white;
+}
+#applyopen{
+
+    color: rgb(0, 61, 61);
+}
+#noplace{
+    background-color: red;
+    padding: 10px;
+    color: #fff;
+    font-family: var(--patrick);
+    /* display: none; */
+}
+
+
+
+
+#irres{
+    line-height: 1.4em;
+    font-size: 2vw !important;
+    font-family: var(--patrick);
+    color: rgb(0, 0, 0) !important;
+}
+
+
+#caste{color: var(--viridian);}
+#color{color: rgb(26, 151, 223);}
+#religion{color: rgb(0, 160, 112) ;}
+
+
+
+
+/* admission responsive */
+
+
+@media(max-width:800px){
+#admission{
+    flex-direction: column;
+}
+#admission img{
+    width: 100%;
+}
+#irres{
+    font-size: 24px !important;
+}
+
+#applyadd h1{
+    font-size: 30px;
+    padding: 5px 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+#ano{
+    height: 100vh;
+}
+
+
+#load{
+    position: fixed;
+    z-index: 1111111;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+.loadcen{
+ animation: loading 3s infinite linear;
+}
+#load p{
+    color: #40826D;
+}
+
+@keyframes loading {
+0%{
+    opacity: 0.3;
+}
+50%{
+    opacity: 1;
+}
+100%{opacity: 0.3;}
+}
