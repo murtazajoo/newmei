@@ -75,6 +75,10 @@
         width: 35%;
         height: 100%;
     }
+    .messages{
+        display:none;
+    
+    }
     .message {
         height: 170px;
         margin: 15px 5px;
