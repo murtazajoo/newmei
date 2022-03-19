@@ -42,6 +42,7 @@ margin: 0;
     border: 20px solid white;
     transform: rotate(-10deg);
     width: 40%;
+    /* transition: 1s; */
 }
 
 #paralx{
@@ -51,9 +52,9 @@ margin: 0;
     bottom: 0;
     width: 100%;
     z-index: -1;
-        background: url("../images/bg/headerbg.jpg");
+        background-image: url("../images/bg/headerbg.jpg");
         background-size: cover;
-        background-color: #40826D;
+       background-color: #40826D;
         background-blend-mode:darken;
 }
 
@@ -101,13 +102,14 @@ header{
     flex-direction: column;
 }
 #headersec h3{
-font-size: 40px;
+font-size: 50px;
 }
 
 #headersec h4,#headersec p{
-    font-size: 20px;
+    font-size: 25px;
 }
 #headersec img{
-    width: 70%;
+    width: 80%;
+    border: 10px solid #fff;
 }
 }

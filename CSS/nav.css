@@ -118,6 +118,10 @@ nav .navcon > ul > li:hover  a::after {
 
 
 @media(max-width:400px){
+
+.navcon{
+    height: 60px;
+}
     #logoimg{
         width: 100px;
     }
